@@ -1,0 +1,22 @@
+Conclusiones - Pruebas API PetStore (Opcion 2)
+
+1. Pruebas realizadas:
+   a. Anadir una mascota a la tienda
+   b. Consultar mascota por ID
+   c. Actualizar nombre y status a "sold"
+   d. Consultar mascota modificada por status
+
+2. Hallazgos:
+   - Se necesitaba guardar el ID de la mascota creada, para esto se creó un 
+     archivo pet_id.json en la ruta: target/pet_id.json. Si este archivo no 
+     está creado se creará uno por default.
+   - En las consultas y actualizaciones (b, c, d), en varias ocaciones tocaba 
+     hacer un retry para que responda Ok, esto sucedía xq aún su información 
+     de la ejecución anterior no se cargaba, es decir, la información no se 
+     actualizaba aún.
+   - Para anadir mascota se usó un id aleatorio
+
+Conclusion: 
+El ejercicio permitió validar, detectar y resolver problemas reales, tambien 
+permitió la sicronización de datos entre los diferentes endpoints, además que 
+se puedo manejar los reintentos de cada escenario.
