@@ -4,7 +4,7 @@
 	<artifactId>pruebaApi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>petstore</name>
-	<description>Prueba Api - Opcion 2 / PetStore</description>
+	<description>Prueba Api - PetStore User</description>
   
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/com.intuit.karate/karate-junit5 -->
