@@ -1,0 +1,32 @@
+HALLAZGOS:
+
+1. El API PetStore permite realizar correctamente operaciones CRUD sobre
+   el recurso "user" mediante los endpoints:
+   - POST /user
+   - GET /user/{username}
+   - PUT /user/{username}
+   - DELETE /user/{username}
+
+2. Se identificó que en Karate cada Scenario es independiente y que las
+   variables definidas en el Background se recalculan en cada ejecución,
+   por lo que fue necesario persistir datos dinámicos en archivos JSON
+   para su reutilización entre escenarios.
+
+3. El uso de datos dinámicos (username e id) evita colisiones con usuarios
+   creados en ejecuciones anteriores o por otros usuarios.
+
+4. Karate facilita la validación de respuestas mediante expresiones claras
+   (match) y permite capturar y reutilizar fácilmente información del
+   response.
+
+CONCLUSIONES:
+
+- El flujo completo de creación, consulta, actualización y eliminación de
+  usuarios funciona correctamente en el API PetStore.
+- Karate es una herramienta adecuada para pruebas de servicios REST debido
+  a su sintaxis simple, manejo de variables y generación automática de
+  reportes.
+- La generación de reportes HTML permite evidenciar de manera clara las
+  solicitudes, respuestas y validaciones realizadas.
+- La solución implementada es reproducible, mantenible y cumple con los
+  requerimientos solicitados para el ejercicio.
